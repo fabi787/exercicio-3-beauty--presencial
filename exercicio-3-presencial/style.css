@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    
+
+margin:0;
+padding: 5px;
+min-height: 100vh;
+width: 1360px;;
+background-color: black;
+
+
+}
+
+
+
+
+.carrossel{
+    box-shadow: 2px 2px 4px #fff; /* Põe sombra na imagem ou area*/
+    overflow: hidden;
+    width: 1000px;
+    height: 50%;
+}
+
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Da o tempo de duração para a mudança das imagens */
+    transform: translateX(0);  /* Informa que quando chegar na ultima foto... voltar pro começo e reiniciar o precesso */
+    
+
+}
+
+img{
+    object-fit: cover;  /* Informa que todas as imagens devem aparecer no mesmo lugar */
+    height: 100%;
+    width: 1000px;
+}
+
+
+
+    
+
